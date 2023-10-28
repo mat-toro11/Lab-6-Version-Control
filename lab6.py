@@ -1,6 +1,6 @@
 
 # Kriti Shah and Matthew Toro
-# hello
+#
 def main():
     condition = True
 
