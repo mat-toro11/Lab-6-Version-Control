@@ -12,7 +12,6 @@ def encoder(password): #Encoder function, returns encoded password
 
     return y
 
-
 def decoder(password):  # Encoder function, adding three
     decoded_password = ''
 
