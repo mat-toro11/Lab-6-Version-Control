@@ -11,7 +11,6 @@ def encode(password) #Encoder function, returns encoded password
         y += str(i) #Changes list into string
 
     return y #Returns encoded string
-
 def decoder(password):  # Encoder function, adding three
     decoded_password = ''
 
