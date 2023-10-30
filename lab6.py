@@ -1,14 +1,12 @@
-
 # Kriti Shah and Matthew Toro
-#hello
 
-def encode(password) #Encoder function, returns encoded password
+def encoder(password): #Encoder function, returns encoded password
     z = []
     j = ''
     #Returns j
 
     for i in range(len(password)):
-        z.append(int(password[i]+3)) #Appends encoded character into the list
+        z.append(str(int(password[i])+3)) #Appends encoded character into the list
 
     for i in z:
         j += str(i) #Changes list into string
@@ -29,14 +27,15 @@ def decoder(password):  # Encoder function, adding three
     return decoded_password  # return the new string
 
 def main():
-    while condition: #Loop function
+    while True: #Loop function
         print('Menu\n-------------\n1. Encode\n2. Decode\n3. Quit') #Menu
-        user_input = input('Please enter an option: ')
+        print()
+        user_input = int(input('Please enter an option: '))
 
         if user_input == 1: #Encoder option
-            password = input('Please enter your password to encode')
+            password = input('Please enter your password to encode: ')
             encoded = encoder(password) #Encodes password
-            print('Your password has been encoded')
+            print('Your password has been encoded and stored!')
             print()
 
         if user_input == 2: #Decoder option
@@ -45,7 +44,6 @@ def main():
 
         if user_input == 3:
             exit() #Exits program
-
 
 if __name__ == '__main__': #Main
     main()
