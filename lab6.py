@@ -1,12 +1,17 @@
 
 # Kriti Shah and Matthew Toro
 #hello
-def encode(password):
+def encode(password) #Encoder function, returns encoded password
     x = []
     y = ''
 
     for i in range(0, len(password)):
-        x.append(passwor)
+        x.append(int(password[i]+3)) #Appends encoded character into the list
+
+    for i in x:
+        y += str(i) #Changes list into string
+
+    return y #Returns encoded string
 
 def decoder(password):  # Encoder function, adding three
     decoded_password = ''
