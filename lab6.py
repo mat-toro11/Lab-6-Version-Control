@@ -46,3 +46,8 @@ def main():
         if user_input == 3:
             exit() #Exits program
 
+
+if __name__ == '__main__': #Main
+    main()
+
+
