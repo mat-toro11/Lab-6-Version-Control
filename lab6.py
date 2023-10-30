@@ -5,7 +5,7 @@ def encode(password) #Encoder function, returns encoded password
     x = []
     y = ''
 
-    for i in range(0, len(password)):
+    for i in range(len(password)):
         x.append(int(password[i]+3)) #Appends encoded character into the list
 
     for i in x:
