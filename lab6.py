@@ -5,12 +5,12 @@ def encoder(password): #Encoder function, returns encoded password
     y = ''
 
     for i in range(0, len(password)):
-        x.append(int(password[i])+3)
+        x.append(int(password[i])+3) #Appends encoded character to list
 
     for i in x:
-        y += str(i)
+        y += str(i) #Changes list into string
 
-    return y
+    return y #Returns encoded string
 
 def decoder(password):  # Encoder function, adding three
     decoded_password = ''
@@ -42,7 +42,7 @@ def main():
             print()
 
         if user_input == 3: #Exit function
-            exit()
+            exit() #Exits program
 
 if __name__ == '__main__': #Main
     main()
