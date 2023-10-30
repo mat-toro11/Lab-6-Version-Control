@@ -1,5 +1,6 @@
 
 # Kriti Shah and Matthew Toro
+#hello
 def encode(password) #Encoder function, returns encoded password
     x = []
     y = ''
