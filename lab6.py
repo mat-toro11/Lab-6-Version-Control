@@ -28,7 +28,23 @@ def decoder(password):  # Encoder function, adding three
 
     return decoded_password  # return the new string
 
+def main():
+    while condition: #Loop function
+        print('Menu\n-------------\n1. Encode\n2. Decode\n3. Quit') #Menu
+        user_input = input('Please enter an option: ')
 
+        if user_input == 1: #Encoder option
+            password = input('Please enter your password to encode')
+            encoded = encoder(password) #Encodes password
+            print('Your password has been encoded')
+            print()
+
+        if user_input == 2: #Decoder option
+            print('The encoded password is ' + str(encoded) + ', and the original password is ' + str(decoder(encoded)) + '.')
+            print()
+
+        if user_input == 3:
+            exit() #Exits program
 
 if __name__ == '__main__': #Main
     main()
